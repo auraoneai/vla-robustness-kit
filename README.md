@@ -15,7 +15,7 @@ diagnostics over episode instructions, metadata, and task-phase lists.
 ## Install
 
 ```bash
-python -m pip install "vla-robustness-kit==0.1.1"
+python -m pip install "vla-robustness-kit==0.1.2"
 ```
 
 ## Verified Quickstart
@@ -73,8 +73,8 @@ standalone `vla-robustness-kit` CLI.
 
 Verified on 2026-07-13:
 
-- PyPI: [`vla-robustness-kit==0.1.1`](https://pypi.org/project/vla-robustness-kit/0.1.1/)
-- GitHub release: [`v0.1.1`](https://github.com/auraoneai/vla-robustness-kit/releases/tag/v0.1.1)
+- PyPI: [`vla-robustness-kit==0.1.2`](https://pypi.org/project/vla-robustness-kit/0.1.2/)
+- GitHub release: [`v0.1.2`](https://github.com/auraoneai/vla-robustness-kit/releases/tag/v0.1.2)
 - Bundled reports are deterministic tutorial diagnostics, not benchmark or
   deployment evidence.
 
