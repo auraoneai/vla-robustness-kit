@@ -4,18 +4,44 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vla-robustness-kit"
-version = "0.1.0"
-description = "Simulator-light diagnostics for VLA policy robustness."
+version = "0.1.1"
+description = "Run deterministic, simulator-free VLA perturbation diagnostics over episode metadata and instructions."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [{ name = "AuraOne", email = "opensource@auraone.ai" }]
-keywords = ["robotics", "vla", "robustness", "evals", "lerobot"]
+keywords = [
+  "lerobot",
+  "perturbation-testing",
+  "rlds",
+  "robotics",
+  "robustness",
+  "vision-language-action",
+  "vla",
+]
 classifiers = [
   "Development Status :: 3 - Alpha",
+  "Environment :: Console",
   "Intended Audience :: Science/Research",
-  "Programming Language :: Python :: 3"
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Robotics",
+  "Topic :: Software Development :: Testing",
 ]
+dependencies = []
+
+[project.urls]
+Homepage = "https://auraone.ai/open"
+Source = "https://github.com/auraoneai/vla-robustness-kit"
+Issues = "https://github.com/auraoneai/vla-robustness-kit/issues"
+Documentation = "https://github.com/auraoneai/vla-robustness-kit#readme"
+"Probe Contract" = "https://github.com/auraoneai/vla-robustness-kit/blob/main/README.md#what-is-actually-perturbed"
+Changelog = "https://github.com/auraoneai/vla-robustness-kit/blob/main/CHANGELOG.md"
+Security = "https://github.com/auraoneai/vla-robustness-kit/security/policy"
 
 [project.scripts]
 vla-robustness-kit = "vla_robustness_kit.cli:main"
@@ -25,4 +51,3 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
-
