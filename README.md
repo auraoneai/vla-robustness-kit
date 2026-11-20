@@ -1,5 +1,16 @@
 # vla-robustness-kit
 
+**Simulator-free VLA perturbation diagnostics.** Part of [Robotics Studio](https://auraone.ai/open/robotics-studio).
+
+```bash
+python -m pip install "vla-robustness-kit==0.1.2"
+vla-robustness-kit run examples/mock_episode_set \
+  --policy mock \
+  --out /tmp/vla-robustness-report.md
+```
+
+From a source checkout this writes a Markdown report with `Perturbation runs: 22`.
+
 `vla-robustness-kit` generates deterministic, simulator-free perturbation
 diagnostics over episode instructions, metadata, and task-phase lists.
 
@@ -83,3 +94,12 @@ Verified on 2026-07-13:
 Use the mock policy to validate report ingestion and review, then connect a
 separately reviewed executable policy adapter through `robostudio-engine` for
 real model outputs.
+
+Part of the AuraOne robotics dataset QA workflow:
+[lerobot-quality-gates](https://auraone.ai/open/lerobot-quality-gates) →
+[Robotics Studio](https://auraone.ai/open/robotics-studio).
+
+---
+
+Need reviewed demonstration data or dataset quality operations at scale?
+[Talk to AuraOne](https://auraone.ai/contact?from=open:vla-robustness-kit)

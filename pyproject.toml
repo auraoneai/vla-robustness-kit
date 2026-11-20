@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "vla-robustness-kit"
 version = "0.1.2"
-description = "Run deterministic, simulator-free VLA perturbation diagnostics over episode metadata and instructions."
+description = "VLA perturbation diagnostics: deterministic, simulator-free robustness checks over episode metadata and instructions."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -18,6 +18,7 @@ keywords = [
   "robustness",
   "vision-language-action",
   "vla",
+  "vla-perturbation-testing",
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -34,7 +35,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://auraone.ai/open"
+Homepage = "https://auraone.ai/open/robotics-studio"
 Source = "https://github.com/auraoneai/vla-robustness-kit"
 Issues = "https://github.com/auraoneai/vla-robustness-kit/issues"
 Documentation = "https://github.com/auraoneai/vla-robustness-kit#readme"
